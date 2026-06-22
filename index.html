@@ -280,17 +280,51 @@
         </div>
       </div>
       <div class="seal-wrap" aria-hidden="true">
-        <svg viewBox="0 0 200 200">
-          <defs>
-            <path id="sealCircle" d="M100,100 m-78,0 a78,78 0 1,1 156,0 a78,78 0 1,1 -156,0" />
-          </defs>
-          <circle cx="100" cy="100" r="92" fill="none" stroke="rgba(244,239,222,0.3)" stroke-width="1.5"/>
-          <circle cx="100" cy="100" r="78" fill="none" stroke="rgba(244,239,222,0.5)" stroke-width="1"/>
-          <text font-family="'IBM Plex Mono', monospace" font-size="11" fill="rgba(244,239,222,0.78)" letter-spacing="3">
-            <textPath href="#sealCircle" startOffset="0%">JADTRA EDU • TERVERIFIKASI • JADTRA EDU • TERVERIFIKASI •</textPath>
-          </text>
-          <path d="M70,102 l20,20 l40,-46" fill="none" stroke="#B79A5E" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
-        </svg>
+        <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <path id="topArc" d="M100,100 m-68,0 a68,68 0 1,1 136,0"/>
+          <path id="botArc" d="M100,100 m-68,0 a68,68 0 0,0 136,0"/>
+          <linearGradient id="sg1" x1="0" y1="1" x2="0" y2="0">
+            <stop offset="0%" stop-color="#7A6010"/>
+            <stop offset="50%" stop-color="#D4AF37"/>
+            <stop offset="100%" stop-color="#F0D060"/>
+          </linearGradient>
+          <linearGradient id="sg2" x1="0" y1="1" x2="0" y2="0">
+            <stop offset="0%" stop-color="#8A6B10"/>
+            <stop offset="50%" stop-color="#C9A030"/>
+            <stop offset="100%" stop-color="#E8C84A"/>
+          </linearGradient>
+        </defs>
+        <!-- Ring luar -->
+        <circle cx="100" cy="100" r="94" fill="none" stroke="rgba(244,239,222,0.25)" stroke-width="1"/>
+        <!-- Ring teks -->
+        <circle cx="100" cy="100" r="80" fill="none" stroke="rgba(212,175,55,0.5)" stroke-width="1"/>
+        <!-- Ring dalam -->
+        <circle cx="100" cy="100" r="56" fill="none" stroke="rgba(212,175,55,0.4)" stroke-width="0.75" stroke-dasharray="3 3"/>
+        <!-- Teks atas: JADTRA EDU -->
+        <text font-family="IBM Plex Mono, monospace" font-size="11.5" font-weight="500" fill="rgba(244,239,222,0.9)" letter-spacing="4">
+          <textPath href="#topArc" startOffset="18%">JADTRA EDU</textPath>
+        </text>
+        <!-- Teks bawah: TERVERIFIKASI -->
+        <text font-family="IBM Plex Mono, monospace" font-size="9.5" fill="rgba(212,175,55,0.85)" letter-spacing="3.5">
+          <textPath href="#botArc" startOffset="20%">TERVERIFIKASI • EST. 2026</textPath>
+        </text>
+        <!-- Titik dekorasi kiri kanan -->
+        <circle cx="27" cy="100" r="2.5" fill="rgba(212,175,55,0.6)"/>
+        <circle cx="173" cy="100" r="2.5" fill="rgba(212,175,55,0.6)"/>
+        <!-- Logo api di tengah (skala kecil, center 100,100) -->
+        <g transform="translate(72,62) scale(1.45)">
+          <!-- Api kiri -->
+          <path d="M4 42 C2 36,0 28,3 20 C4 14,8 10,6 4 C10 8,14 14,12 22 C11 28,8 34,10 42 Z" fill="url(#sg1)" opacity="0.85"/>
+          <!-- Api tengah -->
+          <path d="M12 42 C10 34,9 24,13 14 C15 8,18 4,17 0 C21 6,24 14,22 24 C20 32,17 36,19 42 Z" fill="url(#sg2)"/>
+          <!-- Api kanan -->
+          <path d="M20 42 C18 36,17 28,20 20 C22 14,26 10,24 4 C28 9,32 16,30 24 C28 32,25 36,27 42 Z" fill="url(#sg1)" opacity="0.8"/>
+          <!-- Batang J -->
+          <rect x="13" y="32" width="5" height="10" rx="1" fill="url(#sg2)"/>
+          <path d="M13 42 Q13 44 10 44 Q8 44 8 42" fill="none" stroke="#C9A030" stroke-width="2.2" stroke-linecap="round"/>
+        </g>
+      </svg>
       </div>
     </div>
   </section>
@@ -387,12 +421,12 @@
       <p>Hubungi kami untuk info program, jadwal terbaru, atau penawaran in-house training khusus perusahaan Anda.</p>
       <div style="display:flex;gap:14px;justify-content:center;flex-wrap:wrap;">
       <a href="https://wa.me/6283192500200?text=Halo%20Jadtra%20Edu%2C%20saya%20ingin%20info%20lebih%20lanjut%20mengenai%20program%20pelatihan%20pajak%20%F0%9F%99%8F" target="_blank" class="btn btn--stamp">Chat WhatsApp Sekarang</a>
-      <a href="mailto:jadtraconsulting@gmail.com" class="btn btn--outline">Kirim Email</a>
+      <a href="mailto:robbyproject8@gmail.com" class="btn btn--outline">Kirim Email</a>
     </div>
       <div class="contact-rows">
-        <div class="contact-row"><span>EMAIL</span><span>jadtraconsulting@gmail.com</span></div>
-        <div class="contact-row"><span>WHATSAPP</span><span>083192500300</span></div>
-        <div class="contact-row"><span>INSTAGRAM</span><span>jadtraconsulting</span></div>
+        <div class="contact-row"><span>EMAIL</span><span>robbyproject8@gmail.com</span></div>
+        <div class="contact-row"><span>WHATSAPP</span><span>[isi nomor Anda]</span></div>
+        <div class="contact-row"><span>INSTAGRAM</span><span>[isi akun Anda]</span></div>
       </div>
     </div>
   </section>

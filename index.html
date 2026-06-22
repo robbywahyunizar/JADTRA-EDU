@@ -226,7 +226,36 @@
 
 <header>
   <div class="header-inner">
-    <div class="logo">JADTRA EDU</div>
+    <a href="#top" class="logo" style="display:flex;align-items:center;gap:10px;text-decoration:none;">
+      <svg width="36" height="44" viewBox="0 0 36 44" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" style="flex-shrink:0">
+        <defs>
+          <linearGradient id="flame1" x1="0" y1="44" x2="10" y2="0" gradientUnits="userSpaceOnUse">
+            <stop offset="0%" stop-color="#7A6010"/>
+            <stop offset="50%" stop-color="#D4AF37"/>
+            <stop offset="100%" stop-color="#F0D060"/>
+          </linearGradient>
+          <linearGradient id="flame2" x1="8" y1="44" x2="20" y2="0" gradientUnits="userSpaceOnUse">
+            <stop offset="0%" stop-color="#8A6B10"/>
+            <stop offset="50%" stop-color="#C9A030"/>
+            <stop offset="100%" stop-color="#E8C84A"/>
+          </linearGradient>
+          <linearGradient id="flame3" x1="16" y1="44" x2="28" y2="0" gradientUnits="userSpaceOnUse">
+            <stop offset="0%" stop-color="#7A6010"/>
+            <stop offset="50%" stop-color="#D4AF37"/>
+            <stop offset="100%" stop-color="#F0D060"/>
+          </linearGradient>
+        </defs>
+        <path d="M4 42 C2 36, 0 28, 3 20 C4 14, 8 10, 6 4 C10 8, 14 14, 12 22 C11 28, 8 34, 10 42 Z" fill="url(#flame1)" opacity="0.9"/>
+        <path d="M12 42 C10 34, 9 24, 13 14 C15 8, 18 4, 17 0 C21 6, 24 14, 22 24 C20 32, 17 36, 19 42 Z" fill="url(#flame2)"/>
+        <path d="M20 42 C18 36, 17 28, 20 20 C22 14, 26 10, 24 4 C28 9, 32 16, 30 24 C28 32, 25 36, 27 42 Z" fill="url(#flame3)" opacity="0.85"/>
+        <rect x="13" y="32" width="5" height="10" rx="1" fill="url(#flame2)"/>
+        <path d="M13 42 Q13 44 10 44 Q8 44 8 42" fill="none" stroke="#C9A030" stroke-width="2.5" stroke-linecap="round"/>
+      </svg>
+      <div style="display:flex;flex-direction:column;line-height:1.1">
+        <span style="font-family:'IBM Plex Mono',monospace;font-weight:500;font-size:1rem;letter-spacing:0.1em;color:var(--ink)">JADTRA</span>
+        <span style="font-family:'IBM Plex Mono',monospace;font-weight:400;font-size:0.65rem;letter-spacing:0.18em;color:var(--gold)">EDU</span>
+      </div>
+    </a>
     <nav>
       <a href="#top">Beranda</a>
       <a href="#program">Program</a>
